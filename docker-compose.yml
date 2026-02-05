@@ -18,3 +18,4 @@ services:
       - CROP_TO_SCREEN=${CROP_TO_SCREEN:-true}
     volumes:  
       - ./public:/var/www/html
+    restart: unless-stopped
